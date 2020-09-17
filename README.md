@@ -208,7 +208,7 @@ Notice how:
 - each `case` (including `default`) ends with a `break`.
 
 ## Enumerated Types
-Enumerators should be named either like [constants](#Constant Names) or like macros: either `kEnumName` or `ENUM_NAME`.
+Enumerators should be named either like [constants](#constant-names) or like macros: either `kEnumName` or `ENUM_NAME`.
 
 Preferably, the individual enumerators should be named like constants. However, it is also acceptable to name them like macros. The enumeration name, `UrlTableErrors` (and `AlternateTableErrors`), is a type, and therefore mixed case. Pick one and be consistent.
 
