@@ -1,5 +1,5 @@
 # Style Guide for C++
-> Adapted from Harvard's [CS50 Style Guide](https://github.com/cs50/cs50.readthedocs.io/blob/rel/style/c.md)
+> Adapted from [Harvard's CS50 Style Guide](https://github.com/cs50/cs50.readthedocs.io/blob/rel/style/c.md), and from [Google C++ Style Guide for Drake](https://drake.mit.edu/styleguide/cppguide.htm)
 
 There's no one, right way to stylize code. But there are definitely a lot of wrong (or, at least, bad ways). Even so, CS150/151 does ask that you adhere to the conventions below so that we can reliably analyze your code's style. Similarly do companies typically adopt their own, company-wide conventions for style.
 
@@ -53,11 +53,10 @@ Atop your .cpp and .h files should be a header comment that includes the name of
 ```cpp
 /**
  * @file main.cpp
- *
- * Says hello to the world
- *
+ * @brief Says hello to the world
  * @author John Doe
  * @date   08/19/2020 or August 19, 2020
+ *
  */
 ```
 
@@ -65,10 +64,10 @@ Atop each of your functions (except, perhaps, `main`), meanwhile, should be a co
 
 ```cpp
 /**
- * Compute and return the square of n
+ * @brief Compute and return the square of n
  * 
  * @param n number to be squared
- * @return square of n
+ * @return int square of n
  */
 int square(int n)
 {
@@ -112,6 +111,19 @@ Don't declare pointers on the same line as non-pointers, as in:
 
 ```cpp
 int *p, n;
+```
+
+## Constant Names
+
+Variables declared as `const`, and whose value is fixed for the duration of the program, are named with a leading `k` followed by a mixed case. Underscores can be used in the rare cases where capitalization cannot be used for separation. For example:
+```cpp
+const int kDaysInAWeek = 7;
+const int kAndroid8_0_0 = 24;  // Android 8.0.0
+```
+Macro style is also allowed.
+```cpp
+const int DAYS_IN_A_WEEK = 7;
+const int ANDROID_8_0_0 = 24;
 ```
 
 ## Conditions
@@ -194,6 +206,32 @@ Notice how:
 - the switch's cases are indented with 4 spaces;
 - the cases' bodies are indented further with 4 spaces; and
 - each `case` (including `default`) ends with a `break`.
+
+## Enumerated Types
+Enumerators should be named either like [constants](#Constant Names) or like macros: either `kEnumName` or `ENUM_NAME`.
+
+Preferably, the individual enumerators should be named like constants. However, it is also acceptable to name them like macros. The enumeration name, `UrlTableErrors` (and `AlternateTableErrors`), is a type, and therefore mixed case. Pick one and be consistent.
+
+Constant style,
+```cpp
+enum UrlTableErrors
+{
+    kOk = 0,
+    kErrorOutOfMemory,
+    kErrorMalformedInput
+};
+```
+
+Macro style,
+```cpp
+enum AlternateUrlTableErrors
+{
+    OK = 0,
+    OUT_OF_MEMORY = 1,
+    MALFORMED_INPUT = 2
+};
+```
+
 
 ## Functions
 
