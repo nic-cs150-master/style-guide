@@ -52,8 +52,8 @@ Atop your .cpp and .h files should be a header comment that includes the name of
 
 ```cpp
 /**
- * @file main.cpp
- * @brief Says hello to the world
+ * @file   main.cpp
+ * @brief  Says hello to the world
  * @author John Doe
  * @date   08/19/2020 or August 19, 2020
  *
@@ -66,7 +66,7 @@ Atop each of your functions (except, perhaps, `main`), meanwhile, should be a co
 /**
  * @brief Compute and return the square of n
  * 
- * @param n number to be squared
+ * @param  n   number to be squared
  * @return int square of n
  */
 int square(int n)
