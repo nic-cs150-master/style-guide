@@ -28,7 +28,7 @@ Within functions, use "inline comments" and keep them short (e.g., one line), el
 float c = 5.0f / 9.0f * (f - 32.0f);
 ```
 
-In other words, don't do this:
+In other words, **DO NOT** do this:
 
 ```cpp
 //Convert Fahrenheit to Celsius
@@ -94,7 +94,7 @@ If declaring multiple variables of the same type at once, it's fine to declare t
 int quarters, dimes, nickels, pennies;
 ```
 
-Just don't initialize some but not others, as in:
+Just **DO NOT** initialize some but not others, as in:
 
 ```cpp
 int quarters, dimes = 0, nickels = 0 , pennies;
@@ -107,7 +107,7 @@ int *p;
 int n;
 ```
 
-Don't declare pointers on the same line as non-pointers, as in:
+**DO NOT** declare pointers on the same line as non-pointers, as in:
 
 ```cpp
 int *p, n;
@@ -164,7 +164,7 @@ if (x < 0) {
 }
 ```
 
-And definitely don't do this:
+And definitely **DO NOT** do this:
 
 ```cpp
 if (x < 0)
@@ -398,7 +398,7 @@ When declaring a pointer, write the `*` next to the variable, as in:
 int *p;
 ```
 
-Don't write it next to the type, as in:
+**DO NOT** write it next to the type, as in:
 
 ```cpp
 int* p;
