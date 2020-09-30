@@ -368,6 +368,26 @@ Notice how:
 - there isn't any space immediately after the `(` or immediately before the `)`; and
 - the loop's body (a comment in this case) is indented with 4 spaces.
 
+## Classes
+
+Declare a `class` as a type as follows, with the type's name proceeding the keyword `class`, with each curly brace on its own line, access specifiers (e.g. `public`, `private`, and `protected`) should be aligned with the `class` keyword and braces. Member variables and functions should be indented 4 spaces. All class member variables should be prefix with `m` follow by a capital first letter of the variable name. This makes it easier to differentiate local variables from class member variables.
+
+```cpp
+class Student
+{
+public:
+    Student();
+    ~Student();
+    string getName() const;
+    string getDorm() const;
+    void setName(string name);
+    void setDorm(string dorm);
+    
+private:
+    string mName;
+    string mDorm;
+};
+
 ## Structures
 
 Declare a `struct` as a type as follows, with the type's name proceeding the keyword `struct`, with each curly brace on its own line and member variables indented therein:
