@@ -3,6 +3,10 @@
 
 There's no one, right way to stylize code. But there are definitely a lot of wrong (or, at least, bad ways). Even so, CS150/151 does ask that you adhere to the conventions below so that we can reliably analyze your code's style. Similarly do companies typically adopt their own, company-wide conventions for style.
 
+## Indentation
+
+Use 4 spaces for indenting a line of code. Properly indenting your code increases the readability of your code. While each company's standard of indenting may vary between using tabs or spaces, and even the number of spaces 2, 3 or 4, but applying proper indentation in your code is a standard practice in the industry.
+
 ## Line Length
 
 By convention the maximum length of a line of code is 80 characters long in C/C++, with that being historically grounded in standard-sized monitors on older computer terminals, which could display 24 lines vertically and 80 characters horizontally. Though modern technology has obsoleted the need to keep lines capped at 80 characters, it is still a guideline that should be considered a "soft stop," and a line of 100 characters should really be the longest you write in C/C++, else readers will generally need to scroll. If you need more than 100 characters, it may be time to rethink either your variable names or your overall design!
