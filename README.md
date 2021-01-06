@@ -25,6 +25,7 @@ Comments make code more readable, not only for others (e.g., your instructor, te
 1. What does this block do?
 1. Why did I implement this block in this way?
 
+### Inline Comments
 Within functions, use "inline comments" and keep them short (e.g., one line), else it becomes difficult to distinguish comments from code, even with [syntax highlighting](http://en.wikipedia.org/wiki/Syntax_highlighting). Place the comment above the line(s) to which it applies. No need to write in full sentences, but do capitalize the comment's first word (unless it's the name of a function, variable, or the like), and do leave one space between the `//` and your comment's first character, as in:
 
 ```cpp
@@ -52,6 +53,7 @@ Or this:
 float c = 5.0f / 9.0f * (f - 32.0f); // Convert Fahrenheit to Celsius
 ```
 
+## File Header Comment
 Atop your .cpp and .h files should be a header comment that includes the name of the file, a description that summarizes what your program (or that particular file) does, programmer's name, date initiated, as in:
 
 ```cpp
@@ -64,6 +66,7 @@ Atop your .cpp and .h files should be a header comment that includes the name of
  */
 ```
 
+## Function Header Comment
 Atop each of your functions (except, perhaps, `main`), meanwhile, should be a comment that summarizes what your function is doing, as in:
 
 ```cpp
