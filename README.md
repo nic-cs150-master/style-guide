@@ -394,6 +394,7 @@ private:
     string mName;
     string mDorm;
 };
+```
 
 ## Structures
 
