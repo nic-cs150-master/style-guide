@@ -53,7 +53,7 @@ Or this:
 float c = 5.0f / 9.0f * (f - 32.0f); // Convert Fahrenheit to Celsius
 ```
 
-## File Header Comment
+### File Header Comment
 Atop your .cpp and .h files should be a header comment that includes the name of the file, a description that summarizes what your program (or that particular file) does, programmer's name, date initiated, as in:
 
 ```cpp
@@ -66,7 +66,7 @@ Atop your .cpp and .h files should be a header comment that includes the name of
  */
 ```
 
-## Function Header Comment
+### Function Header Comment
 Atop each of your functions (except, perhaps, `main`), meanwhile, should be a comment that summarizes what your function is doing, as in:
 
 ```cpp
