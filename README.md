@@ -8,7 +8,7 @@ There's no one, right way to stylize code. But there are definitely a lot of wro
 Use 4 spaces for indenting a line of code. Properly indenting your code increases the readability of your code. While each company's standard of indenting may vary between using tabs or spaces, and even the number of spaces 2, 3 or 4, but applying proper indentation in your code is a standard practice in the industry.
 
 ### Brace placement
-You may use Allman or K&R style but I prefer Allman style. No other styles is allowed. Read more about [indentation styles](https://en.wikipedia.org/wiki/Indentation_style).
+You may use **Allman** or **K&R style** but ***I prefer Allman style***. No other styles is allowed! Read more about [indentation styles](https://en.wikipedia.org/wiki/Indentation_style).
 
 ## Line Length
 
