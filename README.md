@@ -127,7 +127,7 @@ Variables declared as `const`, and whose value is fixed for the duration of the 
 const int kDaysInAWeek = 7;
 const int kAndroid8_0_0 = 24;  // Android 8.0.0
 ```
-Macro style is also allowed.
+Although it is **discouraged**, Macro style is also allowed.
 ```cpp
 const int DAYS_IN_A_WEEK = 7;
 const int ANDROID_8_0_0 = 24;
