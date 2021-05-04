@@ -135,7 +135,7 @@ const int ANDROID_8_0_0 = 24;
 
 ## Conditions
 
-Conditions should be styled as follows:
+Conditions should use [Allman style](https://en.wikipedia.org/wiki/Indentation_style#Brace_placement_in_compound_statements) as follows:
 
 ```cpp
 if (x > 0)
@@ -161,7 +161,7 @@ Notice how:
 - there are single spaces around the `>` and around the `<`; and
 - there isn't any space immediately after each `(` or immediately before each `)`.
 
-To save space, some programmers like to keep the first curly brace on the same line as the condition itself. Although I don't recommend it, as it's harder to read, it is ok to do so but you need to be consistent. Pick one style:
+You may also use [K&R style]([Allman style](https://en.wikipedia.org/wiki/Indentation_style#Brace_placement_in_compound_statements). To save space, some programmers like to keep the first curly brace on the same line as the condition itself. Although I don't recommend it, as it's harder to read, it is ok to do so but you need to be consistent. Pick one style:
 
 ```cpp
 if (x < 0) {
